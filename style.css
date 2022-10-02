@@ -163,9 +163,16 @@ h3 {
   .scroll-div{
     width: 95vw;
   }
+  .scroll-content{
+    width: 90vw;
+  }
 
   .img-container {
     left: 29px;
+  }
+  .img-container img{
+    height: 78vw;
+    width: 78vw;
   }
 
   h2 {
