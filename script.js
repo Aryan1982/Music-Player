@@ -9,7 +9,6 @@ const durationEl= document.getElementById('duration');
 const prevBtn= document.getElementById('prev');
 const playBtn= document.getElementById('play');
 const nextBtn= document.getElementById('next');
-const music1= document.getElementById('music1');
 
 //Music
 const songs=[
@@ -32,6 +31,26 @@ const songs=[
 		name: 'metric-1',
 		displayName: 'Front Row (Remix)',
 		artist: 'Metric/Jacinto Design',
+	},
+	{
+		name: 'ferrari-1',
+		displayName: '(remix)',
+		artist: 'James Hype and Miggy Dela Rosa',
+	},
+	{
+		name: 'ferrari-extended',
+		displayName: 'James Hype and Miggy Dela Rosa',
+		artist: 'James Hype and Miggy Dela Rosa',
+	},
+	{
+		name: 'drink-a-yak',
+		displayName: 'Drink a yak',
+		artist: 'Jidanofu',
+	},
+	{
+		name: 'sunroof',
+		displayName: 'sunroof',
+		artist: 'nicky youre',
 	},
 ];
 
@@ -70,7 +89,10 @@ function loadSong(song){
 	music.src=`music/${song.name}.mp3`
 	image.src = `img/${song.name}.jpg`;
 
+
 }
+
+
 //Current Song
 let songIndex =0;
 
@@ -97,6 +119,11 @@ function prevSong(){
 
 }
 
+
+// //List of songs
+// function listSongs(song){
+
+// }
 
 // On Load - select first song
 loadSong(songs[songIndex]);
@@ -141,15 +168,15 @@ function setProgressBar(e){
 	music.currentTime= (clickX/width)*duration;
 }
 //Play selected song
-function playSelectedSong(){
-	songIndex=0;
+function playSelectedSong(btn){
+	songIndex=btn.id;
 	loadSong(songs[songIndex]);
 	playSong();
 }
+
 //Event Listeners
 prevBtn.addEventListener('click',prevSong);
 nextBtn.addEventListener('click',nextSong);
 music.addEventListener('ended', nextSong);
 music.addEventListener('timeupdate', updateProgressBar);
-music1.addEventListener('click',playSelectedSong);
 progressContainer.addEventListener('click', setProgressBar);
