@@ -9,6 +9,7 @@ const durationEl= document.getElementById('duration');
 const prevBtn= document.getElementById('prev');
 const playBtn= document.getElementById('play');
 const nextBtn= document.getElementById('next');
+const music1= document.getElementById('music1');
 
 //Music
 const songs=[
@@ -80,7 +81,6 @@ function nextSong(){
 	if(songIndex > songs.length -1){
 		songIndex = 0;
 	}
-	console.log(songIndex)
 	loadSong(songs[songIndex]);
 	playSong()
 
@@ -140,10 +140,16 @@ function setProgressBar(e){
 	const{ duration }= music;
 	music.currentTime= (clickX/width)*duration;
 }
-
+//Play selected song
+function playSelectedSong(){
+	songIndex=0;
+	loadSong(songs[songIndex]);
+	playSong();
+}
 //Event Listeners
 prevBtn.addEventListener('click',prevSong);
 nextBtn.addEventListener('click',nextSong);
 music.addEventListener('ended', nextSong);
 music.addEventListener('timeupdate', updateProgressBar);
+music1.addEventListener('click',playSelectedSong);
 progressContainer.addEventListener('click', setProgressBar);
