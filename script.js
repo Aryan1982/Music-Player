@@ -34,7 +34,7 @@ const songs=[
 	},
 	{
 		name: 'ferrari-1',
-		displayName: '(remix)',
+		displayName: 'Ferrari',
 		artist: 'James Hype and Miggy Dela Rosa',
 	},
 	{
