@@ -34,12 +34,12 @@ const songs=[
 	},
 	{
 		name: 'ferrari-1',
-		displayName: 'Ferrari',
+		displayName: 'Ferrari (remix)',
 		artist: 'James Hype and Miggy Dela Rosa',
 	},
 	{
 		name: 'ferrari-extended',
-		displayName: 'James Hype and Miggy Dela Rosa',
+		displayName: 'Ferrari Extended(remix)',
 		artist: 'James Hype and Miggy Dela Rosa',
 	},
 	{
