@@ -52,6 +52,21 @@ const songs=[
 		displayName: 'sunroof',
 		artist: 'nicky youre',
 	},
+	{
+		name: 'darker-place',
+		displayName: 'Darker Place',
+		artist: 'Rachel Chinouriri',
+	},
+	{
+		name: 'hotel',
+		displayName: 'Hotel',
+		artist: 'Claire Rosinkranz',
+	},
+	{
+		name: 'ferris-wheel',
+		displayName: 'Ferris Wheel',
+		artist: 'Sylvan Esso',
+	},
 ];
 
 
