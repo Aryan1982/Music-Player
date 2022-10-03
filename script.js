@@ -24,8 +24,8 @@ const songs=[
 	},
 	{
 		name: 'jacinto-3',
-		displayName: 'Goodnight, Disco Queen',
-		artist: 'Jacinto Design',
+		displayName: 'Arabic Cat (remix)',
+		artist: 'Habibi Cat',
 	},
 	{
 		name: 'metric-1',
