@@ -14,13 +14,13 @@ const nextBtn= document.getElementById('next');
 const songs=[
 	{
 		name: 'jacinto-1',
-		displayName: 'Electric Chill Machine',
-		artist: 'Jacinto Design',
+		displayName: 'Getaway',
+		artist: 'Home Grown',
 	},
 	{
 		name: 'jacinto-2',
-		displayName: 'Seven Nation Army (Remix)',
-		artist: 'Jacinto Design',
+		displayName: 'Marvin Gaye',
+		artist: 'Charlie Puth',
 	},
 	{
 		name: 'jacinto-3',
